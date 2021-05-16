@@ -17,7 +17,7 @@ python manage.py runserver
 
 Visit ```localhost:8000/admin``` in your browser, login with the credentials you've created in the ```createsuperuser``` step.
 
-Now Navigate to the Student model on the left side pane and start by importing the ```sample_data.xlsx``` provided in the project's root directory.
+Now Navigate to the Student model on the left side pane and start by importing the ```sample_data.csv/sample_data.xlsx``` provided in the project's root directory.
 
 Similarly, data can be exported with the export button in the Student model's Admin View.
 
