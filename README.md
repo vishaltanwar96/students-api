@@ -1,17 +1,19 @@
 # students-api
 
 ## Running the project locally
+In project's root directory execute following commands
 ```shell
 python3.9 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-cd src
-python manage.py collectstatic
-python manage.py createsuperuser
 ```
+Create a ```config.ini``` in config directory with acceptable values for all the options, refer ```sample.ini``` for example.
 
-Make sure to create a ```config.ini``` in config directory with acceptable values for all the options, refer ```sample.ini``` for example.
 ```shell
+cd src
+python manage.py migrate
+python manage.py collectstatic  # (Optional) Required only if DEBUG=False 
+python manage.py createsuperuser
 python manage.py runserver
 ```
 
