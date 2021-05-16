@@ -12,7 +12,7 @@ Create a ```config.ini``` in config directory with acceptable values for all the
 ```shell
 cd src
 python manage.py migrate
-python manage.py collectstatic  # (Optional) Required only if DEBUG=False 
+python manage.py collectstatic 
 python manage.py createsuperuser
 python manage.py runserver
 ```
